@@ -4,7 +4,11 @@
 Designed for apple's dark model, It's a simple example of fitting iOS13 dark model. Yes, it's just a simple example
 
 ### Usage
-##### 1.First, load DarkModel.h darkModel.m
+##### 1.First, load 
+<pre>
+DarkModel.h 
+darkModel.m
+</pre>
 ##### 2.Direct use of
 <pre>
 self.view.backgroundColor = [DarkModel adaptColor:[UIColor whiteColor] darkColor:[UIColor blackColor]];
