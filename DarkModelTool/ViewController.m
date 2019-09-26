@@ -15,10 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *logo;
 
-@property (strong, nonatomic) UIColor *color1;
 
-
-@property (nonatomic, strong) DarkModel *darkModel;
 @end
 
 @implementation ViewController
@@ -26,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     // initUI
     [self initUI];
 }
