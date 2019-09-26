@@ -9,7 +9,7 @@ Designed for apple's dark model, It's a simple example of fitting iOS13 dark mod
 DarkModel.h 
 darkModel.m
 </pre>
-##### 2.Direct use of
+##### 2.Begin to use
 <pre>
 self.view.backgroundColor = [DarkModel adaptColor:[UIColor whiteColor] darkColor:[UIColor blackColor]];
 self.titleLabel.textColor = [DarkModel adaptColor:[UIColor blackColor] darkColor:[UIColor whiteColor]];
