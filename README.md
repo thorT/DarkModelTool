@@ -67,4 +67,4 @@ Bool isDarkMode = [DarkModel isDarkMode]
 
 </pre>
 ###### You can already download the project, which has detailed examples. 
-###### The documents in the project are in Chinese, don't ask me why, if you must ask, ask is '套路'
+###### The documents in the project are in Chinese, don't ask me why, if you must ask, ask is 'taolu'
