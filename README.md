@@ -4,17 +4,17 @@
 Designed for apple's dark model, It's a simple example of fitting iOS13 dark model. Yes, it's just a simple example
 
 ### Usage
-###### 1.First, load DarkModel.h darkModel.m
-###### 2.Direct use of
+##### 1.First, load DarkModel.h darkModel.m
+##### 2.Direct use of
 <pre>
 self.view.backgroundColor = [DarkModel adaptColor:[UIColor whiteColor] darkColor:[UIColor blackColor]];
 self.titleLabel.textColor = [DarkModel adaptColor:[UIColor blackColor] darkColor:[UIColor whiteColor]];
 </pre>
-###### 3.You can tell that the current state is dark model or light model
+##### 3.You can tell that the current state is dark model or light model
 <pre>
 Bool isDarkMode = [DarkModel isDarkMode]
 </pre>
-###### 4.The sample is as follows
+##### 4.The sample is as follows
 <pre>
 - (void)initUI{
 
@@ -66,5 +66,5 @@ Bool isDarkMode = [DarkModel isDarkMode]
 }
 
 </pre>
->You can already download the project, which has detailed examples. 
->The documents in the project are in Chinese, don't ask me why, if you must ask, ask is '套路'
+###### You can already download the project, which has detailed examples. 
+###### The documents in the project are in Chinese, don't ask me why, if you must ask, ask is '套路'
