@@ -23,7 +23,7 @@ Bool isDarkMode = [DarkModel isDarkMode]
 You can use UIColor or RGBColor
 + (UIColor *)adaptColor:(UIColor *)color darkColor:(UIColor *)darkColor;
 
-You can use hexadecimal strings, alpha=1 by default
+You can use hexadecimal strings. Default, alpha=1
 + (UIColor *)adaptHexColor:(NSString *)hexColor darkColor:(NSString *)hexDarkColor;
 
 You can use hexadecimal strings and custom alpha values
