@@ -18,7 +18,18 @@ self.titleLabel.textColor = [DarkModel adaptColor:[UIColor blackColor] darkColor
 <pre>
 Bool isDarkMode = [DarkModel isDarkMode]
 </pre>
-##### 4.The sample is as follows
+##### 4.More options
+<pre>
+You can use UIColor or RGBColor
++ (UIColor *)adaptColor:(UIColor *)color darkColor:(UIColor *)darkColor;
+
+You can use hexadecimal strings, alpha=1 by default
++ (UIColor *)adaptHexColor:(NSString *)hexColor darkColor:(NSString *)hexDarkColor;
+
+You can use hexadecimal strings and custom alpha values
++ (UIColor *)adaptHexColor:(NSString *)hexColor darkColor:(NSString *)hexDarkColor alpha:(CGFloat)alpha;
+</pre>
+##### 5.The sample is as follows
 <pre>
 - (void)initUI{
 
