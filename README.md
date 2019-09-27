@@ -29,21 +29,21 @@ You can use hexadecimal strings. Default, alpha=1
 You can use hexadecimal strings and custom alpha values
 + (UIColor *)adaptHexColor:(NSString *)hexColor darkColor:(NSString *)hexDarkColor alpha:(CGFloat)alpha;
 </pre>
-#### 5. Suggest creating BaseViewController
+#### 5. Suggest creating BaseViewController 
 <pre>
-######BaseViewController，Avoid writing this much for every VC
+=> BaseViewController (ps: Avoid writing this much for every VC)
 -(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{}
 - (void)setupDarkModel{}
 - (void)darkType{}
 - (void)lightType{}
-#######ViewController 
+=> ViewController 
 ps:In light and dark, text content changes or CGColor changes and other special cases, will be used
 1.[self setupDarkModel];
 2.Rewrite
 - (void)darkType{}
 - (void)lightType{}
 </pre>
-#### 5.The sample is as follows
+#### 6. The sample is as follows
 <pre>
 - (void)initUI{
 
