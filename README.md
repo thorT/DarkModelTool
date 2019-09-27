@@ -29,6 +29,20 @@ You can use hexadecimal strings. Default, alpha=1
 You can use hexadecimal strings and custom alpha values
 + (UIColor *)adaptHexColor:(NSString *)hexColor darkColor:(NSString *)hexDarkColor alpha:(CGFloat)alpha;
 </pre>
+##### 5.Suggest creating BaseViewController
+<pre>
+######BaseViewController，Avoid writing this much for every VC
+-(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{}
+- (void)setupDarkModel{}
+- (void)darkType{}
+- (void)lightType{}
+#######ViewController 
+ps:In light and dark, text content changes or CGColor changes and other special cases, will be used
+1.[self setupDarkModel];
+2.Rewrite
+- (void)darkType{}
+- (void)lightType{}
+</pre>
 ##### 5.The sample is as follows
 <pre>
 - (void)initUI{
@@ -82,4 +96,4 @@ You can use hexadecimal strings and custom alpha values
 
 </pre>
 ###### You can already download the project, which has detailed examples. 
-###### The documents in the project are in Chinese, don't ask me why, if you must ask, ask is 'taolu'
+###### I don't want to use BaseViewController to solve the reuse problem. However, all the methods now thought of will make VC or DarkModel redundant and not concise. if only DarkModel can solve this problem, it will be perfect. if you have a better way, I hope you can share with me,tks.
