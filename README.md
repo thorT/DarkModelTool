@@ -95,5 +95,6 @@ ps:In light and dark, text content changes or CGColor changes and other special 
 }
 
 </pre>
-###### You can already download the project, which has detailed examples. 
-###### I don't want to use BaseViewController to solve the reuse problem. However, all the methods now thought of will make VC or DarkModel redundant and not concise. if only DarkModel can solve this problem, it will be perfect. if you have a better way, I hope you can share with me,tks.
+> You can already download the project, which has detailed examples. 
+> I don't want to use BaseViewController to solve the reuse problem. However, all the methods now thought of will make VC or DarkModel redundant and not concise. if only DarkModel can solve this problem, it will be perfect. 
+> if you have a better way, I hope you can share with me.
