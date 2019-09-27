@@ -94,6 +94,7 @@ ps:In light and dark, text content changes or CGColor changes and other special 
     self.logo.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
+</pre>
 ##### Improve
 I don't want to use BaseViewController to solve the reuse problem. However, all the methods now thought of will make VC or DarkModel redundant and not concise. if only DarkModel can solve this problem, it will be perfect. if you have a better way, I hope you can share with me.
 ##### Afterword
