@@ -4,21 +4,21 @@
 Designed for apple's dark model, It's a simple example of fitting iOS13 dark model. Yes, it's just a simple example
 
 ### Usage
-##### 1.First, load 
+#### 1.First, load 
 <pre>
 DarkModel.h 
 darkModel.m
 </pre>
-##### 2.Begin to use
+#### 2.Begin to use
 <pre>
 self.view.backgroundColor = [DarkModel adaptColor:[UIColor whiteColor] darkColor:[UIColor blackColor]];
 self.titleLabel.textColor = [DarkModel adaptColor:[UIColor blackColor] darkColor:[UIColor whiteColor]];
 </pre>
-##### 3.You can tell that the current state is dark model or light model
+#### 3.You can tell that the current state is dark model or light model
 <pre>
 Bool isDarkMode = [DarkModel isDarkMode]
 </pre>
-##### 4.More options
+#### 4.More options
 <pre>
 You can use UIColor or RGBColor
 + (UIColor *)adaptColor:(UIColor *)color darkColor:(UIColor *)darkColor;
@@ -29,7 +29,7 @@ You can use hexadecimal strings. Default, alpha=1
 You can use hexadecimal strings and custom alpha values
 + (UIColor *)adaptHexColor:(NSString *)hexColor darkColor:(NSString *)hexDarkColor alpha:(CGFloat)alpha;
 </pre>
-##### 5.Suggest creating BaseViewController
+#### 5.Suggest creating BaseViewController
 <pre>
 ######BaseViewController，Avoid writing this much for every VC
 -(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{}
@@ -43,7 +43,7 @@ ps:In light and dark, text content changes or CGColor changes and other special 
 - (void)darkType{}
 - (void)lightType{}
 </pre>
-##### 5.The sample is as follows
+#### 5.The sample is as follows
 <pre>
 - (void)initUI{
 
@@ -95,8 +95,8 @@ ps:In light and dark, text content changes or CGColor changes and other special 
 }
 
 </pre>
-##### Improve
+#### Improve
 I don't want to use BaseViewController to solve the reuse problem. However, all the methods now thought of will make VC or DarkModel redundant and not concise. if only DarkModel can solve this problem, it will be perfect. if you have a better way, I hope you can share with me.
-##### Afterword
+#### Afterword
 You can already download the project, which has detailed examples. 
 
