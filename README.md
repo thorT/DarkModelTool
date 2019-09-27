@@ -31,13 +31,14 @@ You can use hexadecimal strings and custom alpha values
 </pre>
 #### 5. Suggest creating BaseViewController 
 <pre>
-=> BaseViewController (ps: Avoid writing this much for every VC)
+ps:BaseViewController， Avoid writing this much for every VC
+ps:ViewController, In light and dark, text content changes or CGColor changes and other special cases, The ViewController will override and call the parent method, otherwise it can ignore it
+=> BaseViewController 
 -(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{}
 - (void)setupDarkModel{}
 - (void)darkType{}
 - (void)lightType{}
 => ViewController 
-ps:In light and dark, text content changes or CGColor changes and other special cases, will be used
 1.[self setupDarkModel];
 2.Rewrite
 - (void)darkType{}
