@@ -32,7 +32,7 @@ You can use hexadecimal strings and custom alpha values
 #### 5. Suggest creating BaseViewController 
 <pre>
 ps:BaseViewController， Avoid writing this much for every VC
-ps:ViewController, In light and dark, text content changes or CGColor changes and other special cases, The ViewController will override and call the parent method, otherwise it can ignore it
+ps:ViewController, In light and dark, text content changes or CGColor changes and other special cases, The ViewController will override and call the parent method, otherwise it can be ignored
 => BaseViewController 
 -(void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection{}
 - (void)setupDarkModel{}
